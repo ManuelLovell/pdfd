@@ -10,7 +10,6 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 index: path.resolve(__dirname, 'index.html'),
-                pdfjsdist: path.resolve(__dirname, 'pdfjsdist/pdf.worker.min.js'),
             },
         }
     }
