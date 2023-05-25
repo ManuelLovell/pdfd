@@ -12,6 +12,11 @@ export default defineConfig({
                 index: path.resolve(__dirname, 'index.html'),
                 worker: path.resolve(__dirname, './src/pdf.worker.min.js')
             },
+            output: {
+                entryFileNames: `assets/[name].js`,
+                chunkFileNames: `assets/[name].js`,
+                assetFileNames: `assets/[name].[ext]`
+              }
         }
     }
 })
