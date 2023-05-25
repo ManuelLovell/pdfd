@@ -10,7 +10,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 index: path.resolve(__dirname, 'index.html'),
-                worker: path.resolve(__dirname, './src/pdf.worker.js')
+                worker: path.resolve(__dirname, './src/pdf.worker.min.js')
             },
             output: {
                 entryFileNames: `assets/[name].js`,
