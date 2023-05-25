@@ -1,7 +1,7 @@
 import { AnnotEventDetail, TsPdfViewerOptions, TsPdfViewer } from "ts-pdf"
 import '/src/style.css'
-import path from "path";
 
+const path = require('path');
 const filePath = path.basename("./src/pdf.worker.min.js");
 
 async function run(): Promise<void>
