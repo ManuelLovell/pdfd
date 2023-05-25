@@ -1163,6 +1163,7 @@ WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH 
         <div id="button-mode-annotation" class="panel-button panel-item" title="Annotation Tool">
           <img src="${Icons.icon_popup}"/>
         </div> 
+        <div id="button-mode-comparison"></div>
         <div class="panel-v-separator margin-s-5 panel-item"></div>
         <div id="button-open-file" class="panel-button panel-item" title="Open PDF">
           <img src="${Icons.icon_load}"/>
