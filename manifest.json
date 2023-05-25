@@ -1,0 +1,14 @@
+{
+    "name": "PDF!",
+    "version": "1.0.0",
+    "author": "Battle-System",
+    "icon": "/logo.png",
+    "manifest_version": 1,
+    "action": {
+      "title": "PDF!",
+      "icon": "/icon.svg",
+      "popover": "/",
+      "height": 800,
+      "width": 600
+    }
+  }
