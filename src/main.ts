@@ -1,14 +1,18 @@
 import { AnnotEventDetail, TsPdfViewerOptions, TsPdfViewer } from "ts-pdf"
 import '/src/style.css'
+import path from "path";
 
-const path = require('path');
-const filePath = path.basename("./src/pdf.worker.min.js");
+//const filePath = path.relative("./src/pdf.worker.min.js");
+let url = new URL("lib/foo/bar.js", window.location.origin);
+console.log(url.toString());
+let worker = new Worker(url.toString());
+console.log(worker);
 
 async function run(): Promise<void>
 {
     const options: TsPdfViewerOptions = {
         containerSelector: "#app",
-        workerSource: filePath, // path to the PDF.js worker script
+        workerSource: url.toString(), // path to the PDF.js worker script
         fileButtons: ["open", "save"], // you can check other properties using your editor hints
         disabledModes: ["comparison"],
         annotChangeCallback: (detail: AnnotEventDetail) =>  {
