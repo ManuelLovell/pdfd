@@ -5,7 +5,7 @@ async function run(): Promise<void>
 {
     const options: TsPdfViewerOptions = {
         containerSelector: "#app",
-        workerSource: "/worker/", // path to the PDF.js worker script
+        workerSource: "/worker/pdf.worker.min.js", // path to the PDF.js worker script
         fileButtons: ["open", "save"], // you can check other properties using your editor hints
         disabledModes: ["comparison"],
         annotChangeCallback: (detail: AnnotEventDetail) =>  {
