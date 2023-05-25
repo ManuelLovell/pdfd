@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src/",
+    "paths": {
+        "./*": ["./src/*"]},
     "target": "es2015",
     "rootDir": "src",
     "useDefineForClassFields": true,
