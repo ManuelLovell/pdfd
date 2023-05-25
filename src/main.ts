@@ -2,7 +2,7 @@ import { AnnotEventDetail, TsPdfViewerOptions, TsPdfViewer } from "ts-pdf"
 import '/src/style.css'
 
 //const filePath = path.relative("./src/pdf.worker.min.js");
-let url = new URL("lib/foo/bar.js", window.location.origin);
+let url = new URL("./src/pdf.worker.min.js", window.location.origin);
 console.log(url.toString());
 let worker = new Worker(url.toString());
 console.log(worker);
