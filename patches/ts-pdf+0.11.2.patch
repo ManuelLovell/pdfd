@@ -12,10 +12,10 @@ index 9c10e60..aa6d4ec 100644
      annotChangeCallback?: (detail: AnnotEventDetail) => void;
      customStamps?: CustomStampCreationInfo[];
 diff --git a/node_modules/ts-pdf/dist/ts-pdf.esm.js b/node_modules/ts-pdf/dist/ts-pdf.esm.js
-index 4a9b3aa..a046ba6 100644
+index 4a9b3aa..376fcb2 100644
 --- a/node_modules/ts-pdf/dist/ts-pdf.esm.js
 +++ b/node_modules/ts-pdf/dist/ts-pdf.esm.js
-@@ -66,23 +66,20 @@ const mainHtml = `
+@@ -66,23 +66,21 @@ const mainHtml = `
          </div> 
        </div>
        <div id="modes" class="subpanel panel-item">
@@ -34,6 +34,7 @@ index 4a9b3aa..a046ba6 100644
 -        <div id="button-mode-comparison" class="panel-button panel-item">
 -          <img src="${Icons.icon_compare}"/>
 -        </div> 
++        <div id="button-mode-comparison"></div>
          <div class="panel-v-separator margin-s-5 panel-item"></div>
 -        <div id="button-open-file" class="panel-button panel-item">
 +        <div id="button-open-file" class="panel-button panel-item" title="Open PDF">
@@ -44,7 +45,7 @@ index 4a9b3aa..a046ba6 100644
            <img src="${Icons.icon_download}"/>
          </div> 
          <div id="button-close-file" class="panel-button panel-item">
-@@ -92,10 +89,10 @@ const mainHtml = `
+@@ -92,10 +90,10 @@ const mainHtml = `
      </div>
      <div id="bottom-panel">
        <div id="paginator" class="subpanel panel-item">
@@ -57,7 +58,7 @@ index 4a9b3aa..a046ba6 100644
            <img src="${Icons.icon_arrow_down}"/>
          </div>
          <input id="paginator-input" type="text">
-@@ -104,25 +101,25 @@ const mainHtml = `
+@@ -104,25 +102,25 @@ const mainHtml = `
        </div>
        <div class="panel-v-separator panel-item"></div>
        <div id="rotator" class="subpanel panel-item">
@@ -89,7 +90,7 @@ index 4a9b3aa..a046ba6 100644
            <img src="${Icons.icon_fit_page}"/>
          </div>
        </div>
-@@ -146,87 +143,69 @@ const mainHtml = `
+@@ -146,87 +144,69 @@ const mainHtml = `
      <div id="annotation-panel">
        <div class="annotation-panel-row">
          <div id="button-annotation-edit-text" 
