@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" href="data:,">
+    <base href="/">
+    <title>PDF!</title>
+</head>
+<body>   
+    <!-- hack to fit page in mobile browsers  -->
+    <script type="module">
+        const mobileVhHack = () => {
+            const vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        };
+        mobileVhHack();
+        window.addEventListener("resize", mobileVhHack);
+    </script>
+
+    <div class="test-container abs-stretch">
+        <div id="app" class="abs-stretch"></div>
+    </div>
+
+    <script src="src/main.ts" type="module"></script>  
+</body>
+</html>
