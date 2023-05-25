@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "patch-package": "^7.0.0",
+    "pdfjs": "^2.5.0",
+    "pdfjs-dist": "^3.6.172",
     "ts-pdf": "^0.11.2"
   }
 }
