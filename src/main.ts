@@ -1,4 +1,4 @@
-import { AnnotEventDetail, TsPdfViewerOptions, TsPdfViewer } from "ts-pdf"
+import { TsPdfViewer, AnnotEventDetail, TsPdfViewerOptions } from "./ts-pdf";
 import '/src/style.css'
 
 async function run(): Promise<void>
