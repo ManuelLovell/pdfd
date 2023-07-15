@@ -5,6 +5,7 @@ import '/src/style.css'
 
 let currentHeight = 800;
 let currentWidth = 600;
+let currentTheme: "LIGHT" | "DARK";
 
 const addSize = 200;
 
@@ -12,7 +13,13 @@ OBR.onReady(async ()=>
 {
     // Set theme accordingly
     const theme = await OBR.theme.getTheme();
+    currentTheme = theme.mode;
     Utilities.SetThemeMode(theme, document);
+    OBR.theme.onChange((theme) =>
+    {
+        currentTheme = theme.mode;
+        Utilities.SetThemeMode(theme, document);
+    })
 
    await RenderPDFReader();
 });
