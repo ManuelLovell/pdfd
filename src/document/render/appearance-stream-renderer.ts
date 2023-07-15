@@ -371,9 +371,9 @@ export class AppearanceStreamRenderer {
       case "SC": // set current color space stroke color
         this.state.setColor("stroke", ...parameters as number[]);
         break;
-      case "cs": // set current color space fill color
-        this.state.setColor("fill", ...parameters as number[]);
-        break;
+    //   case "cs": // set current color space fill color
+    //     this.state.setColor("fill", ...parameters as number[]);
+    //     break;
       //#endregion
       //#region Misc state operators
       case "ri": // set render intent

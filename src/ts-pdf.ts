@@ -746,7 +746,7 @@ export class TsPdfViewer
         this._viewer.zoomIn();
     };
 
-    private onZoomFitViewerClick = () =>
+    public onZoomFitViewerClick = () =>
     {
         this._viewer.zoomFitViewer();
     };

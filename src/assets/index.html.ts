@@ -11,7 +11,9 @@ export const mainHtml = /*html*/`
       <div class="subpanel panel-item">
         <div id="toggle-previewer" class="panel-button panel-item">
           <img src="${Icons.icon_sidebar}"/>
-        </div> 
+        </div>
+        <div id="toggle-expand" class="panel-sizers panel-button panel-item" type="button" title="Expand Window"><embed class="svg" src="/expand.svg" /></div>
+        <div id="toggle-shrink" class="panel-sizers panel-button panel-item" type="button" title="Shrink Window"><embed class="svg" src="/shrink.svg" /></div> 
       </div>
       <div id="modes" class="subpanel panel-item">
         <div id="button-mode-text" class="panel-button panel-item" title="Text Selection Tool">

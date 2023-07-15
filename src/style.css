@@ -1,55 +1,75 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    color-scheme: inherit;
+    color: rgba(255, 255, 255, 0.87);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 
-  --tspdf-color-primary: darkred;
-  --tspdf-color-primary-tr: rgb(87, 5, 5);
-  --tspdf-color-secondary: rgb(113, 133, 150);
-  --tspdf-color-secondary-tr: rgba(113, 133, 150, 0.9);
-  --tspdf-color-accent: rgba(64, 72, 95, 1);
-  --tspdf-color-shadow: rgba(0, 0, 0, 0.75);
-  --tspdf-color-bg: rgba(128, 128, 128,1);
-  --tspdf-color-fg-primary: rgba(255, 255, 255, 1);
-  --tspdf-color-fg-secondary: rgba(187, 187, 187, 1);
-  --tspdf-color-fg-accent: rgb(255, 128, 170);
-  --tspdf-color-text-selection: rgba(104, 104, 128, 0.3);
+    --invert: none;
+    --OBR-offset-fore: rgb(230, 230, 238);
+    --OBR-offset-back: rgb(49, 49, 65);
+    --OBR-dark-blue: rgb(30, 34, 49);
+    --OBR-dark-blue-trans: rgba(30, 34, 49, 0.507);
+    --OBR-light-blue: rgb(60, 62, 75);
+    --OBR-filter: invert(90%) sepia(55%) saturate(3079%) hue-rotate(240deg) brightness(604%) contrast(101%);
+    --tspdf-color-primary: rgb(60, 62, 75);
+    --tspdf-color-primary-tr: rgb(30, 34, 49);
+    --tspdf-color-secondary: rgb(113, 133, 150);
+    --tspdf-color-secondary-tr: rgba(113, 133, 150, 0.9);
+    --tspdf-color-accent: rgba(64, 72, 95, 1);
+    --tspdf-color-shadow: rgba(0, 0, 0, 0.75);
+    --tspdf-color-bg: rgba(30, 34, 49, 0.507);
+    --tspdf-color-fg-primary: rgba(255, 255, 255, 1);
+    --tspdf-color-fg-secondary: rgba(187, 187, 187, 1);
+    --tspdf-color-fg-accent: rgb(17, 2, 58);
+    --tspdf-color-text-selection: rgba(104, 104, 128, 0.3);
 }
-html, body {
+
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --OBR-offset-fore: rgb(44, 44, 46);
+        --OBR-offset-back: rgb(210, 210, 223);
+        --OBR-dark-blue: rgb(209, 210, 217);
+        --OBR-light-blue: rgb(231, 233, 238);
+        --OBR-filter: invert(90%) sepia(55%) saturate(3079%) hue-rotate(240deg) brightness(604%) contrast(101%);
+        --invert: invert(.65);
+        
+        --tspdf-color-primary:  rgb(244, 245, 248);
+        --tspdf-color-primary-tr: rgb(209, 210, 217);
+        --tspdf-color-secondary: rgb(113, 133, 150);
+        --tspdf-color-secondary-tr: rgba(113, 133, 150, 0.9);
+        --tspdf-color-accent: rgba(64, 72, 95, 1);
+        --tspdf-color-shadow: rgba(0, 0, 0, 0.75);
+        --tspdf-color-bg:  rgba(255, 255, 255, 0.507);
+        --tspdf-color-fg-primary:  rgb(8, 0, 255);
+        --tspdf-color-fg-secondary: rgba(187, 187, 187, 1);
+        --tspdf-color-fg-accent: rgb(17, 2, 58);
+        --tspdf-color-text-selection: rgba(104, 104, 128, 0.3);
+    }
+}
+
+html,
+body {
     position: relative;
     min-width: 320px;
     width: 100vw;
     height: calc(var(--vh, 1vh) * 100);
     margin: 0;
-    background-color: var(--tspdf-color-bg);
     transition: height .25s ease;
 }
+
 .abs-stretch {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-}
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

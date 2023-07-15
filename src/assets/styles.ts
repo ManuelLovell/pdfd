@@ -16,7 +16,15 @@ export const styles = /*html*/`
     left: calc(50% - 160px);  
     width: 320px;
   }
-
+  .svg {
+    width: 25px;
+    height: 25px;
+    filter: var(--invert);
+    pointer-events: none;
+  }
+  .panel-sizers:hover .svg{
+    filter: var(--OBR-filter);
+  }
   #viewer {
     justify-content: flex-start;
   }
