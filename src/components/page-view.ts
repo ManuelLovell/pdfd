@@ -215,7 +215,7 @@ export class PageView implements PageInfo {
     this._viewRendered = false;
   }
   
-  rotateClockwise() {
+  rotateCounterClockwise() {
     if (!this._rotation) {
       this.rotation = 270;
     } else {
@@ -223,7 +223,7 @@ export class PageView implements PageInfo {
     }
   }
 
-  rotateCounterClockwise() {
+  rotateClockwise() {
     if (this._rotation === 270) {
       this.rotation = 0;
     } else {

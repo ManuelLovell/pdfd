@@ -784,7 +784,7 @@ export class TsPdfViewer
         {
             return;
         }
-        this._pageService.getCurrentPage().rotateCounterClockwise();
+        this._pageService.getCurrentPage().rotateClockwise();
         this.setAnnotationMode(this._annotatorService.mode);
     }
     //#endregion
