@@ -43,13 +43,13 @@
         --invert: invert(.65);
         
         --tspdf-color-primary:  rgb(244, 245, 248);
-        --tspdf-color-primary-tr: rgb(209, 210, 217);
+        --tspdf-color-primary-tr: black;
         --tspdf-color-secondary: rgb(113, 133, 150);
-        --tspdf-color-secondary-tr: rgba(113, 133, 150, 0.9);
+        --tspdf-color-secondary-tr: black;
         --tspdf-color-accent: rgba(64, 72, 95, 1);
         --tspdf-color-shadow: rgba(0, 0, 0, 0.75);
         --tspdf-color-bg:  rgba(255, 255, 255, 0.507);
-        --tspdf-color-fg-primary:  rgb(8, 0, 255);
+        --tspdf-color-fg-primary:  rgb(28, 27, 29);
         --tspdf-color-fg-secondary: rgba(187, 187, 187, 1);
         --tspdf-color-fg-accent: rgb(17, 2, 58);
         --tspdf-color-text-selection: rgba(104, 104, 128, 0.3);
