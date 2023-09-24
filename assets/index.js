@@ -1316,11 +1316,11 @@
   .svg {
     width: 25px;
     height: 25px;
-    filter: var(--invert);
     pointer-events: none;
   }
-  .panel-sizers:hover .svg{
-    filter: var(--OBR-filter);
+  .panel-button
+  {
+    filter: var(--invert);
   }
   #viewer {
     justify-content: flex-start;

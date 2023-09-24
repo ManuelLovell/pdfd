@@ -1,7 +1,7 @@
 {
     "name": "PDF!",
     "description":"PDF Viewer allowing for simple notations/saving.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Battle-System",
     "icon": "/logo.png",
     "manifest_version": 1,
