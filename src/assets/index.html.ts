@@ -9,6 +9,7 @@ export const mainHtml = /*html*/`
     <div id="previewer"></div>
     <div id="top-panel"> 
       <div class="subpanel panel-item">
+        <div id="whatsNew"></div>
         <div id="toggle-previewer" class="panel-button panel-item">
           <img src="${Icons.icon_sidebar}"/>
         </div>

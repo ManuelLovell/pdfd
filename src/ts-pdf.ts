@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-use-before-define */
 import { GlobalWorkerOptions } from "pdfjs-dist";
+import * as Utilities from "./utilities";
 
 import { clamp } from "mathador";
 import
@@ -257,6 +258,10 @@ export class TsPdfViewer
         document.addEventListener("selectionchange", this.onTextSelectionChange);
 
         //this._mainContainer.addEventListener("keydown", this.onViewerKeyDown);
+
+        // Append Whats new
+        const whatsNewContainer = this._shadowRoot.getElementById("whatsNew")!;
+        whatsNewContainer.appendChild(Utilities.GetWhatsNewButton());
     }
 
     //#region public API
